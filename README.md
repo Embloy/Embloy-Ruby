@@ -17,8 +17,15 @@ Integrate it in your service:
 require 'embloy'
 
 # Replace 'YOUR_CLIENT_TOKEN' with your actual client token
-client = Embloy::Client.new('YOUR_CLIENT_TOKEN')
+session = {
+    mode: "job",
+    job_slug: "job#1",
+    success_url: "mypage.com/success",
+    cancel_url: "mypage.com/failure"
+}
+client = Embloy::Client.new('YOUR_CLIENT_TOKEN', session)
 redirect_url = client.make_request
+redirect_to redirect_url
 ```
 
 ## Build Gem
