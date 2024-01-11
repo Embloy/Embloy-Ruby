@@ -19,8 +19,6 @@ require 'embloy'
 # Replace 'YOUR_CLIENT_TOKEN' with your actual client token
 client = Embloy::Client.new('YOUR_CLIENT_TOKEN')
 redirect_url = client.make_request
-
-puts "Redirect URL: #{redirect_url}"
 ```
 
 ## Build Gem
@@ -32,7 +30,7 @@ gem build embloy.gemspec
 ## Publish Gem
 
 ```Bash
-gem push embloy-0.1.0.gem
+gem push embloy-0.x.y.gem
 ```
 
 ---
