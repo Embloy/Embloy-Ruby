@@ -5,7 +5,7 @@ module Embloy
   class Client
     def initialize(client_token, session)
       @client_token = client_token
-      @session =session
+      @session = session
       @base_url = 'https://api.embloy.com'
       @api_version = 'api/v0'
     end
@@ -16,6 +16,7 @@ module Embloy
       https.use_ssl = true
       request = Net::HTTP::Post.new(uri)
       request['client_token'] = @client_token
+      request["Cookie"] = "_cfuvid=.tvZ7VoKcPLj2t6oAxZ3BcFyHzytqGeyd7dG3Sxtlcg-1705083408522-0-604800000"
       form_data = [['mode', @session[:mode]],['success_url', @session[:success_url]],['cancel_url', @session[:cancel_url]],['job_slug', @session[:job_slug]]]
       request.set_form form_data, 'multipart/form-data'
 
