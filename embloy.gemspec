@@ -10,5 +10,5 @@ Gem::Specification.new do |spec|
   spec.files         = Dir['lib/**/*.rb']
   spec.required_ruby_version = '>= 2.5.0'
   spec.licenses      = ['AGPL-3.0']
-  spec.homepage      = 'https://developer.embloy.com'
+  spec.homepage      = 'https://developers.embloy.com'
 end
