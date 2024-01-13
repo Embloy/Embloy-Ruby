@@ -16,7 +16,7 @@ module Embloy
       https.use_ssl = true
       request = Net::HTTP::Post.new(uri)
       request['client_token'] = @client_token
-      form_data = [['mode', 'job'],['success_url', @session[:success_url]],['cancel_url', @session[:cancel_url]],['job_slug', @session[:job_slug]]]
+      form_data = [['mode', @session[:mode]],['success_url', @session[:success_url]],['cancel_url', @session[:cancel_url]],['job_slug', @session[:job_slug]]]
       request.set_form form_data, 'multipart/form-data'
 
       response = https.request(request)
