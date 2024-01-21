@@ -16,16 +16,17 @@ Integrate it in your service:
 # In your Rails application or script
 require 'embloy'
 
-# Replace 'YOUR_CLIENT_TOKEN' with your actual client token
+# Make sure to replace 'CLIENT_TOKEN' in your .env file with your actual client token
 session = {
     mode: "job",
     job_slug: "job#1",
     success_url: "mypage.com/success",
     cancel_url: "mypage.com/failure"
 }
-client = Embloy::Client.new('YOUR_CLIENT_TOKEN', session)
+client = Embloy::Client.new(ENV.fetch('CLIENT_TOKEN'), session)
 redirect_url = client.make_request
-redirect_to redirect_url
+
+redirect_to(redirect_url, allow_other_host: true)
 ```
 
 ## Build Gem

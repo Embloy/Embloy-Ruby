@@ -2,7 +2,7 @@ $LOAD_PATH.unshift(File.expand_path('lib', __dir__))
 
 Gem::Specification.new do |spec|
   spec.name          = 'embloy'
-  spec.version       = '0.1.4'
+  spec.version       = '0.1.6'
   spec.authors       = ['Carlo Bortolan']
   spec.email         = ['carlobortolan@gmail.com']
   spec.summary       = 'Embloy\'s Ruby SDK'
