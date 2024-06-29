@@ -1,4 +1,4 @@
-# Embloy Ruby
+# [Embloy Ruby](https://rubygems.org/gems/embloy) &middot; [![GitHub license](https://img.shields.io/badge/license-AGPL3.0-blue.svg)](https://github.com/Embloy/Embloy-Ruby/blob/main/LICENSE) [![gem version](https://img.shields.io/gem/v/embloy.svg?style=flat)](https://rubygems.org/gems/embloy) [![Issues](https://img.shields.io/github/issues/Embloy/Embloy-Ruby)](https://github.com/Embloy/Embloy-Ruby/issues) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Embloy/Embloy-Ruby/pulls)
 
 Embloy's Ruby SDK for interacting with your Embloy integration.
 
